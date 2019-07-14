@@ -1,0 +1,143 @@
+<!doctype html>
+<!--bootstrap example para responsive en la web-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+    <!--cargar la hoja de estilo main.css-->
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    <title>Bet blockchain</title>
+  </head>
+  <body>
+
+      <!--invoca filas y columnas donde meter iconos y título-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 text-center div-center">
+
+      <!--Carga los iconos del título-->
+      <div id="title-div">
+        <div id="clipup">
+          <img src="../img/trophy.png">
+          <img src="../img/gemstone.png">
+          <img src="../img/stadium.png">
+          <img src="../img/medal.png">
+          <img src="../img/soccerball.png">
+          <img src="../img/moneyfly.png">
+          <h1>Bet blockchain</h1>
+        </div>
+      </div>
+
+      <!--Carga el reloj de arena-->
+      <div id="message">
+        <div id="loader" class="alert alert-secondary">
+          <img src="../img/loading.gif">
+          <div><b>LOADING</b></div>
+        </div>
+      </div>
+
+
+      <!--Botones de registro público
+
+      <div>
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <input type="text" id="regUrl" class="form-control" placeholder="Url of the meme">
+      </div>
+      <div class="col">
+        <input type="text" id="regName" class="form-control" placeholder="Your name">
+      </div>
+    </div>
+  </form>
+
+
+
+  <button id="registerBtn" class="btn btn-block">Register</button>
+</div>
+----->
+
+
+
+    <img src="../img/cube-769322_640.jpg" class="rounded mx-auto d-block row-1 col" alt="Responsive image">
+
+
+   <div id="arrow-down">
+  <img src="../img/chevron-down.png">
+  </div>
+
+<section>
+    <h2>BASKETBALL BET NOW!!!</h2>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 div-center">
+          <h4>Boston Celtics vs Chicago Bulls</h4>
+          <hr>
+          <p>End of bets: 25 April 2020<br>Great match bettween two classic NBA TEAMS. Boston or Chicago, Who are <thead>
+            winner? Or perhaps the equal result.
+          </thead>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="message">
+    <div id="loader" class="alert alert-secondary">
+      <img src="../img/loading.gif">
+      <div><b>LOADING</b></div>
+    </div>
+  </div>
+
+
+
+<a href="../index.html" class="btn btn-secondary btn-lg btn-block">GO TO HOMEPAGE</a>
+
+
+
+
+
+<footer>
+  <div id="memeBody">
+        <p><b>Bet Blockchain</b></p><p> Copyright 2019 made by Jorge Bonet<br> If you need some information about game<p> contact to me.</p></p>
+<a href="mailto:jorgeesclapez23@gmail.com" class="btn btn-outline-primary">Send Email</a>
+</footer>
+
+
+<script id="template" type="x-tmpl-mustache">
+      {{#memeArray}}
+        <div class="card">
+          <h5 class="card-title">{{creatorName}}</h5>
+          <img class="card-img-top" src="{{memeUrl}}" alt="Card image cap">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">{{votes}} ættos</h6>
+            <input type="number" class="form-control" placeholder="Amount" id={{index}}>
+            <button class="btn voteBtn btn-block" id={{index}}>BET NOW</button>
+          </div>
+        </div>
+      {{/memeArray}}
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dacadeorg/aeternity-development-101/resources/aepp-sdk.browser.js">
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js">
+    </script>
+
+
+    <!-- carga el archivo index.js adjunto al proyecto -->
+    <script src="basketball.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--bootstrap final de código de ejemplo para responsive-->
+
+  </body>
+</html>
