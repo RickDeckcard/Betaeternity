@@ -1,0 +1,35 @@
+contract BetBlockchain =
+
+  record bet =
+    { creatorAddress  : address,
+      category        : string,
+      url             : string,
+      name            : string,
+      betCount        : int }
+      
+  record state =
+    { bets        : map(int, bet),
+      betsLength  : int }
+  
+  entrypoint init() =
+    { bets = {},
+      betsLength = 0 }
+      
+  public entrypoint getBet(index : int) : bet =
+    switch(Map.lookup(index, state.bets))
+      None    => abort("There was no bet with this index registered.")
+      Some(x) => x
+  
+  public stateful entrypoint placeBet(category' : string, url' : string, name' : string) =
+    let bet = { creatorAddress = Call.caller, category = category', url = url', name = name', betCount = 0 }
+    let index = getBetsLength() + 1
+    put(state{ bets[index] = bet, betsLength = index })
+
+  public entrypoint getBetsLength() : int = state.betsLength
+      
+  public stateful entrypoint voteBet(index : int) =
+    let bet = getBet(index)
+    Chain.spend(bet.creatorAddress, Call.value)
+    let updatedBetCount = bet.betCount + Call.value
+    let updatedBets = state.bets{ [index].betCount = updatedBetCount }
+    put(state{ bets = updatedBets })

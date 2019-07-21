@@ -1,0 +1,38 @@
+# Bæt Blockchain
+
+DEAR DEVELOPER, GOOD DAY, NOW I AM GOING TO EXPLAIN MY DAPP IN AETERNITY TESNET NET.
+
+WELL, I AM USE THE MEMEVOTING EXAMPLE STRUCTURE TO CREATE THE BLOCKCHAIN. ONLY THE OWNER CAN REGISTER THE IMAGES. IN THE SHOPIA CONTRACT
+THE REGISTER FUNCTION IS PUBLIC BUT YOU CAN MAKE IT PRIVATE IF YOU WANT.
+
+TO REGISTER THE IMAGES ONLY YOU MUST INTRODUCE THE URL IN GITHUB. FOR EXAMPLE IN THE SOCCER MATCH MADRID VS BARCELONA YOU MUST PUT THE NEXT URL:
+
+- [https://github.com/RickDeckcard/Betaeternity/blob/master/img/soccer/realmadrid.jpg](https://github.com/RickDeckcard/Betaeternity/blob/master/img/soccer/realmadrid.jpg)
+- [https://github.com/RickDeckcard/Betaeternity/blob/master/img/soccer/barcelona.jpg](https://github.com/RickDeckcard/Betaeternity/blob/master/img/soccer/barcelona.jpg)
+- [https://github.com/RickDeckcard/Betaeternity/blob/master/img/soccer/equal.png](https://github.com/RickDeckcard/Betaeternity/blob/master/img/soccer/equal.png)
+
+YOU GO TO YOUR TESNET CONTRACT AND USE THE FUNCTION placeBet (YOU MUST CHANGE ALL THE NAMES AND PUT RegisterBet for example, it a long job).
+FOR EXAMPLE TO REGISTER REALMADRI.JPG IMAGE YOU MUST PUT THE FOLLOW:
+
+FUNCTION: placeBet
+ARGUMENTS: Soccer, [https://github.com/RickDeckcard/Betaeternity/blob/master/img/soccer/realmadrid.jpg](https://github.com/RickDeckcard/Betaeternity/blob/master/img/soccer/realmadrid.jpg), RealMadridWin
+RETURN TYPE: int
+
+THEN IN THE DAPP APPEAR THE IMAGES AND USERS CAN BET FOR THE WINNER. WHEN THE TIME IS OVER THE OWNER THAT CAN BE AN ORACLE (THAT OPTION MUST DEVELOPER) AND
+BETWEEN ALL THE WINNERS DISTRIBUTE ALL THE MONEY THAT THE REST ALL USERS HAVE LOST. A PART OF THAT TOKENS GO TO THE OWNER OF COURSE.
+
+THE MAIN WEBSITE TO LOAD THE APP IN THE WALLET IS:
+
+[https://rickdeckcard.github.io/Betaeternity/index.html](https://rickdeckcard.github.io/Betaeternity/index.html)
+
+TO GET BETTER:
+
+THE RESPONSIVE DONT WORK GOOD BECAUSE YOU MUST USE IN CSS THE OPTION "CONTAINER". IF YOU DELETE THAT OPTION THE RESPONSIVE WORK PERFECTLLY BUT YOU CANT SCROOL
+IN THE AETERNITY WALLET.
+
+FOLDERS:
+IN THE FOLDER IMG YOU CAN SEE ALL THE IMAGES. IN THE CATEGORIES FOLDER YOU CAN SEE ALL THE WEBSITES PAGES AND JAVASCRIP.
+
+YOU MUST CREATE A SHOPIA CONTRACT FOR EACH BET. DONT FORGET COPY THE CONTRACT ADDRESS IN THE SHOPIA CONTRACT AND PASTE IN THE JAVASCRIPT FILE.
+
+BEST REGARDS AND I HOPE TO ENJOY.
