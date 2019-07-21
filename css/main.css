@@ -1,0 +1,103 @@
+body{
+  background-image: linear-gradient(rgba(2, 33, 9, 1), rgba(95, 167, 45, 1));
+
+}
+
+#clipup {
+  border: 10px dotted black;
+  padding: 15px;
+  background: green;
+  background-clip: padding-box;
+}
+
+#title-div {
+  margin: 1em;
+  color: white;
+}
+
+img{
+  width:40px;
+}
+
+#message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  z-index: 1;
+}
+
+#loader {
+  margin: 1em;
+  color:green;
+  display: none;
+}
+
+.inputForm{
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+.card{
+  margin-top: 3em;
+  padding-top: 0.5em;
+  background-color: #F5F5F5;
+  border: 0.5em solid #F5F5F5;
+}
+.container{
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+#arrow-down{
+text-align: center;
+margin: 0.5em;
+color: white;
+
+}
+
+section{
+  padding: 6em 1em;
+  text-align: center;
+}
+
+section h2{
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+.div-center{
+  margin: 0 auto;
+}
+
+footer{
+  padding: 2em;
+  background: black;
+  color: white;
+  text-align: center;
+
+}
+/* Handle */
+::-webkit-scrollbar {
+	width: 12px;
+	background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px green;
+	background-color: green;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px #b8b5b5;
+	border-radius: 10px;
+	background-color: #ffffff;
+}
